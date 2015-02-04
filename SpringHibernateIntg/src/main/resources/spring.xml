@@ -38,9 +38,11 @@
      
     
     
-    <!-- <aop:aspectj-autoproxy> -->
-
-	<!-- </aop:aspectj-autoproxy> -->
+    
 	<context:annotation-config />
 	<context:component-scan base-package="*" />
+	
+	<aop:aspectj-autoproxy>
+
+	</aop:aspectj-autoproxy>
 </beans>
