@@ -26,22 +26,7 @@ b {
 
 
 
-			<s:url action="locale" id="langueFr">
-				<s:param name="request_locale">fr</s:param>
-			</s:url>
 
-			<s:url action="locale" id="langueAng">
-				<s:param name="request_locale">en</s:param>
-			</s:url>
-
-
-			<s:a href="%{langueFr}">
-				<IMG SRC="../images/pngfr.jpg" border="0"></IMG>
-			</s:a>
-			<s:a href="%{langueAng}">
-				<IMG SRC="../images/pngang.jpg" border="0"></IMG>
-			</s:a>
-			
 			<s:form action="addPersonMethod" method="addPersonMethod">
 
 				<s:hidden name="id" />
