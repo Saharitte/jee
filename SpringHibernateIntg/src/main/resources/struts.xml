@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+
+	<package name="default" namespace="/" extends="struts-default">
+
+		<action name="addPersonMethod" class="com.test.hibernate.action.PersonAction"
+			method="addPerson">
+			<result name="success">pages/index.jsp</result>
+		</action>
+
+
+		<action name="deletePersonMethod" class="com.test.hibernate.action.PersonAction"
+			method="deletePerson">
+			<result name="success">pages/index.jsp</result>
+		</action>
+
+		<action name="listPersonMethod" class="com.test.hibernate.action.PersonAction"
+			method="listPerson">
+			<result name="success">pages/index.jsp</result>
+		</action>
+
+
+		<action name="editPersonMethod" class="com.test.hibernate.action.PersonAction"
+			method="editPerson">
+			<result name="success">pages/index.jsp</result>
+		</action>
+
+
+		<action name="locale" class="com.test.hibernate.action.LocaleAction"  method="execute">
+			<result name="success">pages/index.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
