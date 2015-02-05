@@ -29,7 +29,6 @@
 			<result name="success">pages/index.jsp</result>
 		</action>
 
-
 	
 
 	</package>
